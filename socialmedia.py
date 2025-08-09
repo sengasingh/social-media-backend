@@ -128,6 +128,3 @@ usersLikedPost = session.query(users, likes).filter(likes.postID == post_id).fil
 for user_obj, like_obj in usersLikedPost:
     # Prints users' full names that liked post
     print(user_obj.firstName, user_obj.lastName)
-
-#test
-print("test")
